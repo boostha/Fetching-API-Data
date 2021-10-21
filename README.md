@@ -18,6 +18,6 @@ David Ha
 
 ## Attributions
 
-- [TV OFF](ttps://icons8.com/icon/67897/tv-off) icon by [Icons8](https://icons8.com)
+- [TV OFF](https://icons8.com/icon/67897/tv-off) icon by [Icons8](https://icons8.com)
 
 - [Shows API](https://www.tvmaze.com/api#show-main-information) by [TvMaze](https://www.tvmaze.com)
