@@ -1,3 +1,5 @@
+"use strict";
+
 const fetchData = function(){
   fetch('https://api.tvmaze.com/shows')
     .then(function(response){
