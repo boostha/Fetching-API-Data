@@ -1,5 +1,6 @@
 "use strict";
 
+// Wrap fetch into function
 const fetchData = function(){
   fetch('https://api.tvmaze.com/shows')
     .then(function(response){
@@ -13,14 +14,17 @@ const fetchData = function(){
 
       console.log(data)
 
+      // Create function to produce a random number
       function randomNumber(){
         return Math.floor(Math.random() * data.length)
       }
 
+      // Declare variables for seperate TV Shows
       const randomOne = randomNumber()
       const randomTwo = randomNumber()
       const randomThree = randomNumber()
 
+      // Rewrite innerHTML for each show
       document.querySelector('.show-one').innerHTML = `
         <h2>${data[randomOne].name}</h2>
         <a href="${data[randomOne].image.original}" target="_blank">
@@ -66,6 +70,7 @@ const fetchData = function(){
     });
   }
 
-  document.querySelector('button').addEventListener('click', fetchData);
+  // Button to provide different show each time it is clicked
+  document.querySelector('button').addEventListener("click", fetchData);
 
   
